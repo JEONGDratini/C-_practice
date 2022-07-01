@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Send = new System.Windows.Forms.Button();
             this.set_Port = new System.Windows.Forms.ComboBox();
-            this.output = new System.Windows.Forms.TextBox();
+            this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // Send
@@ -53,27 +55,26 @@
             this.set_Port.TabIndex = 1;
             this.set_Port.SelectedIndexChanged += new System.EventHandler(this.set_Port_SelectedIndexChanged);
             // 
-            // output
+            // richTextBox1
             // 
-            this.output.Location = new System.Drawing.Point(199, 14);
-            this.output.Multiline = true;
-            this.output.Name = "output";
-            this.output.Size = new System.Drawing.Size(228, 96);
-            this.output.TabIndex = 2;
+            this.richTextBox1.Location = new System.Drawing.Point(222, 12);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(188, 114);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 262);
-            this.Controls.Add(this.output);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.set_Port);
             this.Controls.Add(this.Send);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -81,7 +82,8 @@
 
         private System.Windows.Forms.Button Send;
         private System.Windows.Forms.ComboBox set_Port;
-        private System.Windows.Forms.TextBox output;
+        private System.IO.Ports.SerialPort serialPort1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
