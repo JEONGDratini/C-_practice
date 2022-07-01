@@ -51,6 +51,7 @@
             this.set_Port.Name = "set_Port";
             this.set_Port.Size = new System.Drawing.Size(126, 20);
             this.set_Port.TabIndex = 1;
+            this.set_Port.SelectedIndexChanged += new System.EventHandler(this.set_Port_SelectedIndexChanged);
             // 
             // output
             // 
