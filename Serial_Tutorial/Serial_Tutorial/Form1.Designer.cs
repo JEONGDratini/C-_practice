@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Connection_State = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Send
@@ -137,11 +138,16 @@
             this.Connection_State.TabIndex = 9;
             this.Connection_State.Text = "연결 상태";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 10;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 244);
+            this.ClientSize = new System.Drawing.Size(457, 239);
             this.Controls.Add(this.Connection_State);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -173,6 +179,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Connection_State;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
