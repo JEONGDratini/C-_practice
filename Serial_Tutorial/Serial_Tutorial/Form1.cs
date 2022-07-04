@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
+using System.Text;
 
 namespace Serial_Tutorial
 {
@@ -19,13 +21,73 @@ namespace Serial_Tutorial
             InitializeComponent();   
         }
 
-        private void set_Port_SelectedIndexChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {//포트 이름 띄우기
             set_Port.DataSource = SerialPort.GetPortNames();
+            Send.Enabled = false;//연결하기 전에 전송하는 것 방지
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {//시리얼 포트에 텍스트 전송.
+
+            serialPort1.Write(textBox1.Text + "\r\n"); 
+        }
+
+        //Data수신 받으면 실행됨.
+
+        private void SerialReceived(object sender, EventArgs e)
         {
+            string ascii = "";
+            string text = "";
+            int count = 1;//while문 폭주 방지용
+
+            while(true)// \n개행문자가 감지되면 수신을 종료하도록 설정.
+            {
+                if (count % 2000 == 0)//3000바이트씩 읽을 때마다 1번씩 물어보기(개행문자 없을 경우 대비)
+                {
+                    string content = "현재 " + count + "byte를 수신했습니다.\n 통신을 종료하시겠습니까?";
+
+                    if (MessageBox.Show(content, "long_reading", MessageBoxButtons.YesNo) == DialogResult.Yes) 
+                    {
+
+                        set_Port.Enabled = true;//포트설정박스 활성화
+                        Connection_State.Text = "연결해제됨";
+                        serialPort1.Close();
+                    }
+
+                }
+
+                bool Is_End = false;//개행문자 여부 불린값
+
+                int get_Data = serialPort1.ReadByte();//시리얼 포트에 수신된 데이터를 읽는다.1개 바이트만 읽는다.
+                ascii = ascii + string.Format("{0:X2}", get_Data) + " ";//스플릿 할 수 있게 각 바이트마다 띄어쓰기로 구분한다.
+                Is_End = ascii.Contains("0A");//\n의 16진수 표현 검색
+                if (Is_End)//개행문자 있으면 break;
+                    break;
+
+                count++;
+            }
+            string[] hexValues = ascii.Split(' ');
+            foreach (String hex in hexValues) 
+            {
+                if (hex.Length > 0)//확인해보니까 hexvalues 배열의 크기가 실제 존재하는 아스키코드 문자 갯수보다 1개 많아서 오류가 남 -> 해결용 조건문
+                {
+                    int value = Convert.ToInt32(hex, 16);
+
+                    string StrValue = Char.ConvertFromUtf32(value);
+                    char charValue = (char)value;
+                    text = text + charValue;
+                }
+                //richTextBox1.Text = richTextBox1.Text + hex+ ".";
+            }            
+
+                richTextBox1.Text = richTextBox1.Text + text;//읽어온걸 형변환 시켜서 볼 수 있게 한다.
+        }
+
+
+        private void Connect_Click(object sender, EventArgs e)
+        {
+        
             serialPort1.PortName = set_Port.Text;//포트 고른거 가져오기
             serialPort1.BaudRate = 9600;//통신속도
             serialPort1.DataBits = 8;//data bit
@@ -33,38 +95,28 @@ namespace Serial_Tutorial
             serialPort1.Parity = Parity.None;
 
             //Data받아오는거 핸들링할 객체
-            serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort_data_received);
 
             serialPort1.Open();//통신 열고
             set_Port.Enabled = false;//포트설정박스 비활성화
+            Send.Enabled = true;//연결이 되었으니 전송버튼 활성화
+            Connection_State.Text = "연결됨";
 
-            serialPort1.Write("*IDN?\r\n");
-        
         }
 
-        //Data수신 받으면 실행됨.
-        private void serialPort_data_received(object sender, SerialDataReceivedEventArgs e)
+        private void Close_Click(object sender, EventArgs e)
         {
+            serialPort1.Close();
+            set_Port.Enabled = true;//포트설정박스 활성화
+            Send.Enabled = false;//연결하기 전에 전송하는 것 방지
+            Connection_State.Text = "연결해제됨";
+        }
+
+        private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
+        {
+            Thread.Sleep(10);
             this.Invoke(new EventHandler(SerialReceived));
         }
-
-        private void SerialReceived(object sender, EventArgs e)
-        {
-            int get_Data = serialPort1.ReadByte();//시리얼 포트에 수신된 데이터를 읽는다.
-            richTextBox1.Text = richTextBox1.Text + string.Format("{0:X2}", get_Data);//읽어온걸 형변환 시켜서 볼 수 있게 한다.
-        }
-
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void output_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
     }
 }
+
+
