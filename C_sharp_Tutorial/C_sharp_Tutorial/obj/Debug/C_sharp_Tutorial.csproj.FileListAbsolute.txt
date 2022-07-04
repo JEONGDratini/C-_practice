@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\정민용\C#\C_sharp_Tutorial\C_sharp_Tutorial\bin\Debug\C_sharp_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\bin\Debug\C_sharp_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\bin\Debug\C_sharp_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\bin\Debug\C_sharp_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\obj\Debug\C_sharp_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\obj\Debug\C_sharp_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\C_sharp_Tutorial\C_sharp_Tutorial\obj\Debug\C_sharp_Tutorial.pdb

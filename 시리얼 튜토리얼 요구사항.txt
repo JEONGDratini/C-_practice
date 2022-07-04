@@ -1,0 +1,8 @@
+*IDN\r\n
+
+1. 시리얼 통신 공부
+2. 연결
+3. IDN보내기
+4. IDN 수신해서 한줄로 표시
+
+https://unininu.tistory.com/304
