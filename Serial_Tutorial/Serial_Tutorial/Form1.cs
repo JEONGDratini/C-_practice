@@ -102,7 +102,6 @@ namespace Serial_Tutorial
 
         private void serialPort1_DataReceived(object sender, SerialDataReceivedEventArgs e)
         {
-            Thread.Sleep(10);
             this.Invoke(new EventHandler(SerialReceived));
         }
 

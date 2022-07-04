@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             this.Start = new System.Windows.Forms.Button();
             this.Terminate = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.measurement_result = new System.Windows.Forms.DataGridView();
             this.output_guide = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.set_Port = new System.Windows.Forms.ComboBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).BeginInit();
             this.SuspendLayout();
             // 
             // Start
@@ -60,14 +60,15 @@
             this.Terminate.UseVisualStyleBackColor = true;
             this.Terminate.Click += new System.EventHandler(this.Terminate_Click);
             // 
-            // dataGridView1
+            // measurement_result
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(188, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(323, 220);
-            this.dataGridView1.TabIndex = 2;
+            this.measurement_result.AllowUserToOrderColumns = true;
+            this.measurement_result.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.measurement_result.Location = new System.Drawing.Point(188, 31);
+            this.measurement_result.Name = "measurement_result";
+            this.measurement_result.RowTemplate.Height = 23;
+            this.measurement_result.Size = new System.Drawing.Size(323, 220);
+            this.measurement_result.TabIndex = 2;
             // 
             // output_guide
             // 
@@ -96,6 +97,10 @@
             this.set_Port.Size = new System.Drawing.Size(126, 20);
             this.set_Port.TabIndex = 8;
             // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.DataReceived);
+            // 
             // timer1
             // 
             this.timer1.Interval = 1000;
@@ -109,13 +114,13 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.set_Port);
             this.Controls.Add(this.output_guide);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.measurement_result);
             this.Controls.Add(this.Terminate);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,7 +130,7 @@
 
         private System.Windows.Forms.Button Start;
         private System.Windows.Forms.Button Terminate;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView measurement_result;
         private System.Windows.Forms.Label output_guide;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox set_Port;

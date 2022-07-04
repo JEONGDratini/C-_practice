@@ -1,1 +1,9 @@
 C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\bin\Debug\Serial_Tutorial_mk2.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\bin\Debug\Serial_Tutorial_mk2.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\bin\Debug\Serial_Tutorial_mk2.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.Form1.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.Properties.Resources.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2\Serial_Tutorial_mk2\obj\Debug\Serial_Tutorial_mk2.pdb
