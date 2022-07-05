@@ -63,7 +63,6 @@ namespace Serial_Tutorial
                 {
                     int value = Convert.ToInt32(hex, 16);
 
-                    string StrValue = Char.ConvertFromUtf32(value);
                     char charValue = (char)value;
                     text = text + charValue;
                 }
