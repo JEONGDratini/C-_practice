@@ -1,1 +1,9 @@
 C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\bin\Debug\Serial_Tutorial_mk2_Thread_ver.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\bin\Debug\Serial_Tutorial_mk2_Thread_ver.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\bin\Debug\Serial_Tutorial_mk2_Thread_ver.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.Form1.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.Properties.Resources.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Serial_Tutorial_mk2_Thread_ver\Serial_Tutorial_mk2_Thread_ver\obj\Debug\Serial_Tutorial_mk2_Thread_ver.pdb

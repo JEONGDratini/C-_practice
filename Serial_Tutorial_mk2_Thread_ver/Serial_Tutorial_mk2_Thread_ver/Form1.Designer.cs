@@ -59,6 +59,7 @@
             this.terminate.TabIndex = 18;
             this.terminate.Text = "리셋";
             this.terminate.UseVisualStyleBackColor = true;
+            this.terminate.Click += new System.EventHandler(this.terminate_Click);
             // 
             // label2
             // 
@@ -105,6 +106,7 @@
             this.Stop.TabIndex = 13;
             this.Stop.Text = "정지";
             this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // Start
             // 
@@ -114,6 +116,7 @@
             this.Start.TabIndex = 12;
             this.Start.Text = "시작";
             this.Start.UseVisualStyleBackColor = true;
+            this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
             // Form1
             // 
@@ -130,6 +133,7 @@
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

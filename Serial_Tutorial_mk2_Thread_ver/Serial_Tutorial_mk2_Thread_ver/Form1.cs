@@ -8,11 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.Threading;
+
+
 
 namespace Serial_Tutorial_mk2_Thread_ver
 {
     public partial class Form1 : Form
     {
+        System.Threading.Timer MessageTimer;
+        private void ThreadTimerStart()
+        {
+            TimerCallback callback = new TimerCallback(Thread_Messaging);
+            MessageTimer = new System.Threading.Timer(callback, null, 0, 1000);
+            MessageTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
+        }
+
+
+        private void Thread_Messaging(object stateInfo)
+        {
+            serialPort1.Write("MEAS:RES?\r\n");
+           
+        }
+
+
         int count = 1;//DataGrid에 들어갈 번호값
         public Form1()
         {
@@ -24,8 +43,6 @@ namespace Serial_Tutorial_mk2_Thread_ver
             set_Port.DataSource = SerialPort.GetPortNames();//포트이름 가져오기
             measurement_result.Columns.Add("colNum", "번호");//datagrid에 컬럼 집어넣기
             measurement_result.Columns.Add("colRes", "저항값");
-
-
         }
 
         private void Start_Click(object sender, EventArgs e)
@@ -43,7 +60,10 @@ namespace Serial_Tutorial_mk2_Thread_ver
                 label1.Text = "현재상태 : 연결됨";
                 set_Port.Enabled = false;
             }
-            timer1.Start();
+            if (MessageTimer == null)
+            {
+                ThreadTimerStart(); // 스레드타이머시작
+            }
 
         }
 
@@ -83,27 +103,30 @@ namespace Serial_Tutorial_mk2_Thread_ver
 
             measurement_result.Rows.Add(count, result + " Ω");//데이터그리드에 값집어넣기
             count++;
+
         }
 
         private void Stop_Click(object sender, EventArgs e)//정지버튼 눌렀을 때
         {
-            timer1.Stop();
-        }
-
-        private async void timer1_Tick(object sender, EventArgs e)//타이머 지정시간 경과때 마다 실행
-        {
-            serialPort1.Write("MEAS:RES?\r\n");
+            if (MessageTimer != null)//MessageTimer가 null이 아니라면
+            {
+                MessageTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);//시작시간, 반복시간을 무한대로 정한다.
+            }
         }
 
         private void terminate_Click(object sender, EventArgs e)//리셋버튼 눌렀을 때
         {
-            serialPort1.Close();
-            timer1.Stop();
+            if (MessageTimer != null)
+            {
+                MessageTimer.Dispose(); // 스레드타이머삭제
+            }
+            serialPort1.Close();//시리얼 포트 종료
             label1.Text = "현재상태 : 연결안됨";
             set_Port.Enabled = true;
             measurement_result.Rows.Clear();
             count = 1;
         }
+
 
     }
 }
