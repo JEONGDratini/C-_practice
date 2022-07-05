@@ -159,7 +159,7 @@
             this.Controls.Add(this.set_Port);
             this.Controls.Add(this.Send);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Serial_Tutorial_mk1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

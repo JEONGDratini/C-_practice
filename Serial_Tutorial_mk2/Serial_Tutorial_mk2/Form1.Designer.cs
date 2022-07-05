@@ -30,19 +30,21 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Start = new System.Windows.Forms.Button();
-            this.Terminate = new System.Windows.Forms.Button();
+            this.Stop = new System.Windows.Forms.Button();
             this.measurement_result = new System.Windows.Forms.DataGridView();
             this.output_guide = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.set_Port = new System.Windows.Forms.ComboBox();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.terminate = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).BeginInit();
             this.SuspendLayout();
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(19, 73);
+            this.Start.Location = new System.Drawing.Point(19, 136);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(116, 26);
             this.Start.TabIndex = 0;
@@ -50,15 +52,15 @@
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
-            // Terminate
+            // Stop
             // 
-            this.Terminate.Location = new System.Drawing.Point(19, 144);
-            this.Terminate.Name = "Terminate";
-            this.Terminate.Size = new System.Drawing.Size(116, 26);
-            this.Terminate.TabIndex = 1;
-            this.Terminate.Text = "종료";
-            this.Terminate.UseVisualStyleBackColor = true;
-            this.Terminate.Click += new System.EventHandler(this.Terminate_Click);
+            this.Stop.Location = new System.Drawing.Point(19, 168);
+            this.Stop.Name = "Stop";
+            this.Stop.Size = new System.Drawing.Size(116, 26);
+            this.Stop.TabIndex = 1;
+            this.Stop.Text = "정지";
+            this.Stop.UseVisualStyleBackColor = true;
+            this.Stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // measurement_result
             // 
@@ -67,13 +69,13 @@
             this.measurement_result.Location = new System.Drawing.Point(188, 31);
             this.measurement_result.Name = "measurement_result";
             this.measurement_result.RowTemplate.Height = 23;
-            this.measurement_result.Size = new System.Drawing.Size(323, 220);
+            this.measurement_result.Size = new System.Drawing.Size(254, 220);
             this.measurement_result.TabIndex = 2;
             // 
             // output_guide
             // 
             this.output_guide.AutoSize = true;
-            this.output_guide.Location = new System.Drawing.Point(430, 16);
+            this.output_guide.Location = new System.Drawing.Point(186, 16);
             this.output_guide.Name = "output_guide";
             this.output_guide.Size = new System.Drawing.Size(85, 12);
             this.output_guide.TabIndex = 3;
@@ -106,19 +108,40 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // terminate
+            // 
+            this.terminate.Location = new System.Drawing.Point(19, 200);
+            this.terminate.Name = "terminate";
+            this.terminate.Size = new System.Drawing.Size(116, 26);
+            this.terminate.TabIndex = 10;
+            this.terminate.Text = "리셋";
+            this.terminate.UseVisualStyleBackColor = true;
+            this.terminate.Click += new System.EventHandler(this.terminate_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(17, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 12);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "현재상태 : 연결안됨";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 268);
+            this.ClientSize = new System.Drawing.Size(461, 268);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.terminate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.set_Port);
             this.Controls.Add(this.output_guide);
             this.Controls.Add(this.measurement_result);
-            this.Controls.Add(this.Terminate);
+            this.Controls.Add(this.Stop);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Serial_Tutorial_mk2";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).EndInit();
             this.ResumeLayout(false);
@@ -129,13 +152,15 @@
         #endregion
 
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.Button Terminate;
+        private System.Windows.Forms.Button Stop;
         private System.Windows.Forms.DataGridView measurement_result;
         private System.Windows.Forms.Label output_guide;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox set_Port;
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button terminate;
+        private System.Windows.Forms.Label label1;
     }
 }
 
