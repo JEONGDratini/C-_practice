@@ -1,0 +1,7 @@
+Indexer(인덱서)는 class객체의 Data를 배열 형태로 인덱스를 사용해 접근할 수 있게 한다.
+
+즉, 클래스 객체는 배열이 아니지만, 배열처럼 []인덱싱을 사용해 클래스 안의 필드 Data에 접근할 수 있다. 
+
+문법 : CSharp_Tutorial 폴더의 Indexer_Tutorial 프로젝트 참조
+
+
