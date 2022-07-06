@@ -8,17 +8,18 @@ namespace Class_Tutorial
 {
     public class Customer
     {
-        private string name;
+        private string name;//필드 선언
         private int age;
 
-        public event EventHandler NameChanged;
+        public event EventHandler NameChanged;//이벤트 생성
 
-        public Customer()
+        public Customer()//생성자
         {
             name = string.Empty;
             age = -1;
         }
 
+        //속성
         public string Name
         {
             get { return this.name; }
@@ -41,6 +42,7 @@ namespace Class_Tutorial
             set { this.age = value; }
         }
 
+        //메서드
         public string GetCustomerData()
         {
             string data = string.Format("Name: {0} (Age: {1})",
@@ -54,7 +56,7 @@ namespace Class_Tutorial
         static void Main(string[] args)
         {
             Customer cus1 = new Customer();
-            cus1.
+            
         }
     }
 }
