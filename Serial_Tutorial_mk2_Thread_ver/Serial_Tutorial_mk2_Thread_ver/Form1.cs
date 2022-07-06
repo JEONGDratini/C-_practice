@@ -16,22 +16,8 @@ namespace Serial_Tutorial_mk2_Thread_ver
 {
     public partial class Form1 : Form
     {
-        System.Threading.Timer MessageTimer;
-        private void ThreadTimerStart()
-        {
-            TimerCallback callback = new TimerCallback(Thread_Messaging);
-            MessageTimer = new System.Threading.Timer(callback, null, 0, 1000);
-            MessageTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);
-        }
-
-
-        private void Thread_Messaging(object stateInfo)
-        {
-            serialPort1.Write("MEAS:RES?\r\n");
-           
-        }
-
-
+        private Thread th;//신호 송신용 스레드 정의
+        bool state = false;//신호 송신 상태확인용. false -> 메시지 안보냄, true -> 메시지 보냄
         int count = 1;//DataGrid에 들어갈 번호값
         public Form1()
         {
@@ -47,7 +33,7 @@ namespace Serial_Tutorial_mk2_Thread_ver
 
         private void Start_Click(object sender, EventArgs e)
         {
-            if (set_Port.Enabled)//연결이 안돼있으면 연결하고 이미 연결 돼있으면 타이머만 다시 시작한다.
+            if (set_Port.Enabled)//연결이 안돼있으면 연결하고 이미 연결돼있으면 상태만 바꾼다.
             {
                 serialPort1.PortName = set_Port.Text;//포트 고른거 가져오기
                 serialPort1.BaudRate = 9600;//통신속도
@@ -57,23 +43,34 @@ namespace Serial_Tutorial_mk2_Thread_ver
 
                 serialPort1.Open();//통신 열기
 
+                state = true;//상태 : 메시지보냄으로 설정
+                th = new Thread(new ThreadStart(Tick_Tok));//delegate 타입으로 전달하고 스레드를 시작한다.
+                th.Start();
+
                 label1.Text = "현재상태 : 연결됨";
                 set_Port.Enabled = false;
             }
-            if (MessageTimer == null)
-            {
-                ThreadTimerStart(); // 스레드타이머시작
-            }
-
+            state = true;//상태 : 메시지보냄으로 설정
         }
 
+        private void Tick_Tok()
+        {
+            while (true)
+            {
+                if (state)//메시지 보냄 상태일 때만 실행한다.
+                {
+                    serialPort1.Write("MEAS:RES?\r\n");
+                    Thread.Sleep(1000);
+                }
+            }
+        }
 
         private void DataReceived(object sender, SerialDataReceivedEventArgs e)//시리얼 Data받았을 때 실행
         {
             this.Invoke(new EventHandler(serialReceived));//this -> form이다. invoke를 사용해서 스레드 충돌이 일어나지 않도록 해준다.
         }
 
-        private void serialReceived(object sender, EventArgs e)//DataReceived에서 invoke로 호출한다.
+        private async void serialReceived(object sender, EventArgs e)//DataReceived에서 invoke로 호출한다.
         {
             string ascii = "";
             string result = "";
@@ -103,23 +100,17 @@ namespace Serial_Tutorial_mk2_Thread_ver
 
             measurement_result.Rows.Add(count, result + " Ω");//데이터그리드에 값집어넣기
             count++;
-
         }
 
         private void Stop_Click(object sender, EventArgs e)//정지버튼 눌렀을 때
         {
-            if (MessageTimer != null)//MessageTimer가 null이 아니라면
-            {
-                MessageTimer.Change(System.Threading.Timeout.Infinite, System.Threading.Timeout.Infinite);//시작시간, 반복시간을 무한대로 정한다.
-            }
+            state = false;//메시지 전송 안함으로 설정.
         }
 
         private void terminate_Click(object sender, EventArgs e)//리셋버튼 눌렀을 때
         {
-            if (MessageTimer != null)
-            {
-                MessageTimer.Dispose(); // 스레드타이머삭제
-            }
+            state = false;//상태 메시지 전송 안함으로 변경.
+            th.Abort();//스레드 종료.
             serialPort1.Close();//시리얼 포트 종료
             label1.Text = "현재상태 : 연결안됨";
             set_Port.Enabled = true;
@@ -127,6 +118,11 @@ namespace Serial_Tutorial_mk2_Thread_ver
             count = 1;
         }
 
-
+        private void Form_Closed(object sender, FormClosedEventArgs e)
+        {
+            state = false;//상태 메시지 전송 안함으로 변경.
+            th.Abort();//스레드 종료.
+            serialPort1.Close();//시리얼 포트 종료
+        }
     }
 }

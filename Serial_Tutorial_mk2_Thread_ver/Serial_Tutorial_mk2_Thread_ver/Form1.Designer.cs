@@ -118,6 +118,10 @@
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
             // 
+            // serialPort1
+            // 
+            this.serialPort1.DataReceived += new System.IO.Ports.SerialDataReceivedEventHandler(this.DataReceived);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -133,6 +137,7 @@
             this.Controls.Add(this.Start);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form_Closed);
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.measurement_result)).EndInit();
             this.ResumeLayout(false);
