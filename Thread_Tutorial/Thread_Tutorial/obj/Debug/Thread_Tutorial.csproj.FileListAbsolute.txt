@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\bin\Debug\Thread_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\bin\Debug\Thread_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\bin\Debug\Thread_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.Form1.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.Properties.Resources.resources
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial\Thread_Tutorial\obj\Debug\Thread_Tutorial.csprojResolveAssemblyReference.cache

@@ -1,0 +1,5 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial_Console\Thread_Tutorial_Console\bin\Debug\Thread_Tutorial_Console.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial_Console\Thread_Tutorial_Console\bin\Debug\Thread_Tutorial_Console.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial_Console\Thread_Tutorial_Console\bin\Debug\Thread_Tutorial_Console.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial_Console\Thread_Tutorial_Console\obj\Debug\Thread_Tutorial_Console.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Thread_Tutorial_Console\Thread_Tutorial_Console\obj\Debug\Thread_Tutorial_Console.pdb

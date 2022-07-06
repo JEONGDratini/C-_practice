@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\bin\Debug\yield_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\bin\Debug\yield_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\bin\Debug\yield_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\obj\Debug\yield_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\obj\Debug\yield_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\yield_Tutorial\yield_Tutorial\obj\Debug\yield_Tutorial.pdb

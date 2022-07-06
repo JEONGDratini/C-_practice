@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\bin\Debug\Overriding_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\bin\Debug\Overriding_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\bin\Debug\Overriding_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\obj\Debug\Overriding_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\obj\Debug\Overriding_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Overriding_Tutorial\Overriding_Tutorial\obj\Debug\Overriding_Tutorial.pdb
