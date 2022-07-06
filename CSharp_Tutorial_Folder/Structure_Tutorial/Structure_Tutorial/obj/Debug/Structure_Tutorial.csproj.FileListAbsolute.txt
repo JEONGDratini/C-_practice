@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\bin\Debug\Structure_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\bin\Debug\Structure_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\bin\Debug\Structure_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\obj\Debug\Structure_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\obj\Debug\Structure_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Structure_Tutorial\Structure_Tutorial\obj\Debug\Structure_Tutorial.pdb
