@@ -1,0 +1,18 @@
+무명(익명 = anonymous) 메서드는 메서드를 미리 정의하지 않고도 사용하는 메서드다.
+
+만드는 법 : delegate 키워드랑 같이 패러미터와 실행문장 블럭을 적으면 profit!!!!
+
+ex)
+//무명메서드 형식 : delegate( 패러미터 ) { 실행문장 };
+delegate(int param1) { Console.Write(param1); };
+
+delegate void MyDelegate(int a);
+
+MyDelegate d = delegate(int p)
+{
+	Condole.Write(p);
+};
+
+d(100);
+
+다른 예시 : CSharp_Tutorial_폴더의 Anonymous_Method_Tutorial 프로젝트
