@@ -42,5 +42,3 @@ this.button1.Cilck += (sender, e) => ((Button)sender).BackColor = Color.Red;
 위의 각 코드들은 다 같은 뜻이다.
  
  
- 
- 
