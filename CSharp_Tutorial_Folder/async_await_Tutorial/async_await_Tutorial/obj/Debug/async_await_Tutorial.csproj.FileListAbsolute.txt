@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\bin\Debug\async_await_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\bin\Debug\async_await_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\bin\Debug\async_await_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\obj\Debug\async_await_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\obj\Debug\async_await_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\async_await_Tutorial\async_await_Tutorial\obj\Debug\async_await_Tutorial.pdb

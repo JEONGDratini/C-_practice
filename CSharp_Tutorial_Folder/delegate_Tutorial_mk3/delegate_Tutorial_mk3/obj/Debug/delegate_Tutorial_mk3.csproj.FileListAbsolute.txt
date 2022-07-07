@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\bin\Debug\delegate_Tutorial_mk3.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\bin\Debug\delegate_Tutorial_mk3.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\bin\Debug\delegate_Tutorial_mk3.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\obj\Debug\delegate_Tutorial_mk3.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\obj\Debug\delegate_Tutorial_mk3.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\delegate_Tutorial_mk3\delegate_Tutorial_mk3\obj\Debug\delegate_Tutorial_mk3.pdb
