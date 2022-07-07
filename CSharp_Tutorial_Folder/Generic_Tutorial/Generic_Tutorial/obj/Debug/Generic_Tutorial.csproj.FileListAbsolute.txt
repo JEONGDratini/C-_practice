@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\bin\Debug\Generic_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\bin\Debug\Generic_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\bin\Debug\Generic_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\obj\Debug\Generic_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\obj\Debug\Generic_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Generic_Tutorial\Generic_Tutorial\obj\Debug\Generic_Tutorial.pdb
