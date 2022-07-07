@@ -1,1 +1,6 @@
 C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\bin\Debug\Interface_Tutorial.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\bin\Debug\Interface_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\bin\Debug\Interface_Tutorial.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\obj\Debug\Interface_Tutorial.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\obj\Debug\Interface_Tutorial.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\CSharp_Tutorial_Folder\Interface_Tutorial\Interface_Tutorial\obj\Debug\Interface_Tutorial.pdb
