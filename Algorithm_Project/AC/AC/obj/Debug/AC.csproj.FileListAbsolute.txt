@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\bin\Debug\AC.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\bin\Debug\AC.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\bin\Debug\AC.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\obj\Debug\AC.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\obj\Debug\AC.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\AC\AC\obj\Debug\AC.pdb
