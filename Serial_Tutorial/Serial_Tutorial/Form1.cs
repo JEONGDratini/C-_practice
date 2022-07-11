@@ -57,6 +57,7 @@ namespace Serial_Tutorial
                 count++;
             }
             string[] hexValues = ascii.Split(' ');
+
             foreach (String hex in hexValues)
             {
                 if (hex.Length > 0)//확인해보니까 hexvalues 배열의 크기가 실제 존재하는 아스키코드 문자 갯수보다 1개 많아서 오류가 남 -> 해결용 조건문
