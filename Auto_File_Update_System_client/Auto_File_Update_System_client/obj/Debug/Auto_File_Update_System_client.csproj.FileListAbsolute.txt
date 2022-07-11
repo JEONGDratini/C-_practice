@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\bin\Debug\Auto_File_Update_System_client.exe.config
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\bin\Debug\Auto_File_Update_System_client.exe
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\bin\Debug\Auto_File_Update_System_client.pdb
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.Form1.resources
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.Properties.Resources.resources
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.exe
+C:\Users\user\Desktop\정민용\C#\Auto_File_Update_System_client\Auto_File_Update_System_client\obj\Debug\Auto_File_Update_System_client.pdb
