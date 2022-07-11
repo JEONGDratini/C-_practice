@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\bin\Debug\MooChin_humans_Server.exe.config
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\bin\Debug\MooChin_humans_Server.exe
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\bin\Debug\MooChin_humans_Server.pdb
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.MuchinServer.resources
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.Properties.Resources.resources
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.csproj.GenerateResource.Cache
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.exe
+C:\Users\user\Desktop\정민용\C#\MuChin_humans\MooChin_humans_Server\MooChin_humans_Server\obj\Debug\MooChin_humans_Server.pdb

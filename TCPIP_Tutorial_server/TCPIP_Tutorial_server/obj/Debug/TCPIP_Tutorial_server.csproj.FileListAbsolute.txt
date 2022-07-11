@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\bin\Debug\TCPIP_Tutorial_server.exe.config
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\bin\Debug\TCPIP_Tutorial_server.exe
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\bin\Debug\TCPIP_Tutorial_server.pdb
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\obj\Debug\TCPIP_Tutorial_server.exe
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\obj\Debug\TCPIP_Tutorial_server.pdb
+C:\Users\user\Desktop\정민용\C#\TCPIP_Tutorial_server\TCPIP_Tutorial_server\obj\Debug\TCPIP_Tutorial_server.csprojResolveAssemblyReference.cache
