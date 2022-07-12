@@ -62,7 +62,6 @@ namespace BaekJoon_1027
                     count[comb[i][1]]++;
                 }
             }
-
             Array.Sort(count);//count배열 정렬 후 가장 큰값 출력.
             Console.WriteLine(count[N-1]);
             return;
