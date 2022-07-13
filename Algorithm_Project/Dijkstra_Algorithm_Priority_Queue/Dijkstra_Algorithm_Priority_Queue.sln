@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra_Algorithm_Priority_Queue", "Dijkstra_Algorithm_Priority_Queue\Dijkstra_Algorithm_Priority_Queue.csproj", "{C23A40CB-81EC-4751-A82F-CF651E75AB3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C23A40CB-81EC-4751-A82F-CF651E75AB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23A40CB-81EC-4751-A82F-CF651E75AB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23A40CB-81EC-4751-A82F-CF651E75AB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23A40CB-81EC-4751-A82F-CF651E75AB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

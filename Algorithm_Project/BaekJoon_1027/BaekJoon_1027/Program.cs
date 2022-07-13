@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-//백준 1027번 고층빌딩 골드 4
+//백준 1027번 고층빌딩 티어 골드4
 namespace BaekJoon_1027
 {
     class Program
@@ -45,14 +45,12 @@ namespace BaekJoon_1027
             count.Initialize();
 
             for (int i = 0; i < comb.Count; i++) {//각 조합마다 연산한다.
-                double y_dif = building[comb[i][1]] - building[comb[i][0]];
-                double x_dif = comb[i][1] - comb[i][0];
                 double vert = (building[comb[i][1]] - building[comb[i][0]]) / (comb[i][1] - comb[i][0]);//선분의 기울기.
                 double y_mt = building[comb[i][0]] - comb[i][0] * vert;//선분의 y절편
-                bool is_available = true;
+                bool is_available = true;//해당 선분이 유효한지 체크하는 불린변수
 
                 for (int j = comb[i][0] + 1; j < comb[i][1]; j++) { //두 빌딩 사이에 있는 빌딩들이 선분과 만나는지 비교한다.
-                    if (building[j] >= vert * j + y_mt) { //빌딩이 해당 선분과 만난다면
+                    if (building[j] >= vert * j + y_mt) { //빌딩이 해당 선분과 만난다면 해당 선분은 유효하지 않은 것으로 간주한다.
                         is_available = false;
                         break;
                     }
@@ -60,15 +58,12 @@ namespace BaekJoon_1027
 
                 if (is_available)//유효한 선분이면
                 {
-                    int[] a = { comb[i][0], comb[i][1] };
                     count[comb[i][0]]++;//두 빌딩의 볼 수 있는 빌딩 갯수를 1개씩 추가한다.
                     count[comb[i][1]]++;
                 }
             }
-
             Array.Sort(count);//count배열 정렬 후 가장 큰값 출력.
             Console.WriteLine(count[N-1]);
-
             return;
         }
     }
