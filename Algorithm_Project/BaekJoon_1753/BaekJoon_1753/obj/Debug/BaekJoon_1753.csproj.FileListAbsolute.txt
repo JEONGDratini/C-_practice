@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\bin\Debug\BaekJoon_1753.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\bin\Debug\BaekJoon_1753.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\bin\Debug\BaekJoon_1753.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\obj\Debug\BaekJoon_1753.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\obj\Debug\BaekJoon_1753.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_1753\BaekJoon_1753\obj\Debug\BaekJoon_1753.pdb
