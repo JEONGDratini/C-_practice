@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//아웃풋은 정상인데 메모리를 너무잡아먹음. 로직 기본 뼈대는 그대로 두고 자료구조 써먹는걸 손봐야할듯.
 namespace BaekJoon_1753
 {
-    
     class Program
     {
         static int inf = 900000000;//갈 수 없음 표기
@@ -22,7 +22,7 @@ namespace BaekJoon_1753
             visited = new bool[V]; //방문한 정점
             dist = new int[V]; //거리
 
-            Solution(start, ref a, ref dist, ref visited);
+            Solution(start, ref a);
             foreach (int distance in dist)
             {
                 if(distance == inf)
@@ -75,7 +75,7 @@ namespace BaekJoon_1753
         }
 
         //연산하기
-        static void Solution(int start, ref int [,] a, ref int [] dist, ref bool [] visited) {
+        static void Solution(int start, ref int [,] a) {
             
             for (int i = 0; i < V; i++)//맨처음 시작정점과 직접 닿아있는 점들의 거리를 dist에 집어넣는다.
                 dist[i] = a[start-1, i];

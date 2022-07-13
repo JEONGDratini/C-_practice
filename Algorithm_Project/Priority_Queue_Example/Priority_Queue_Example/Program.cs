@@ -17,26 +17,30 @@ namespace Priority_Queue_Example
 
         public static Node node = new Node();
 
-        public static Node newNode(int d, int p)
+        public static Node newNode(int d, int p)//새 노드 설정해 반환하는 메소드
         {
             Node temp = new Node();
-            temp.data = d;
-            temp.priority = p;
+            temp.data = d;//Data값
+            temp.priority = p;//우선순위
             temp.next = null;
             return temp;
         }
 
         public static int top(Node head)
         {
-            return (head).data;
+            return (head).data;//가장 위에 있는 원소 가져오기
         }
+
+
 
         public static Node pop(Node head)
         {
-            Node temp = head;
+            Node temp = head;//
             (head) = (head).next;
             return head;
         }
+
+
 
         public static Node push(Node head, int d, int p)
         {
@@ -75,7 +79,8 @@ namespace Priority_Queue_Example
             {
                 Console.Write("{0:D} ", top(queue));
                 queue = pop(queue);
-            } 
+            }
+            Console.ReadLine();
         }
     }
 }
