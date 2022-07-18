@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\bin\Debug\Binary_Search_Example.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\obj\Debug\Binary_Search_Example.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\bin\Debug\Binary_Search_Example.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\bin\Debug\Binary_Search_Example.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\obj\Debug\Binary_Search_Example.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\Binary_Search_Example\Binary_Search_Example\obj\Debug\Binary_Search_Example.pdb
