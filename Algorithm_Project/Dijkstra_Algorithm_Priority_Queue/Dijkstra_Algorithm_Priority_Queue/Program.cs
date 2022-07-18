@@ -74,6 +74,8 @@ namespace Dijkstra_Algorithm_Priority_Queue
 
         static void Main(string[] args)
         {
+
+
         }
     }
 }

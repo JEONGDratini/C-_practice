@@ -50,6 +50,7 @@ namespace Serial_Tutorial_mk2_Thread_ver
                 label1.Text = "현재상태 : 연결됨";
                 set_Port.Enabled = false;
             }
+
             state = true;//상태 : 메시지보냄으로 설정
         }
 
@@ -110,7 +111,8 @@ namespace Serial_Tutorial_mk2_Thread_ver
         private void terminate_Click(object sender, EventArgs e)//리셋버튼 눌렀을 때
         {
             state = false;//상태 메시지 전송 안함으로 변경.
-            th.Abort();//스레드 종료.
+            if (th != null)
+                th.Abort();//스레드 종료.
             serialPort1.Close();//시리얼 포트 종료
             label1.Text = "현재상태 : 연결안됨";
             set_Port.Enabled = true;
@@ -121,8 +123,10 @@ namespace Serial_Tutorial_mk2_Thread_ver
         private void Form_Closed(object sender, FormClosedEventArgs e)
         {
             state = false;//상태 메시지 전송 안함으로 변경.
-            th.Abort();//스레드 종료.
+            if(th != null)
+                th.Abort();//스레드 종료.
             serialPort1.Close();//시리얼 포트 종료
         }
     }
 }
+
