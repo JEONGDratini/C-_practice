@@ -8,8 +8,9 @@ using System.Threading.Tasks;
 
 //이미 만들어놨던 우선순위 큐를 조금 손보면 될듯함. 뭐 안되면 로직 새로짜야징..ㅠ
 //그래서 새로짜는 중;;ㅎㅎ!!
+//아웃풋은 맞는데 이진탐색을 써도 시간이 너무 오래걸린대요..ㅠ 자료구조가 비효율적인 것 같은데 뭘 써야할지 모르겠넹..ㅠ
 
-//아웃풋은 맞는데 이진탐색을 써도 시간이 너무 오래걸린대요..ㅠ List를 쓰면 안되나봐요 LinkedList로 구현해야할듯..?
+
 
 namespace BaekJoon_7662_duel_priority_queue
 {
@@ -25,7 +26,6 @@ namespace BaekJoon_7662_duel_priority_queue
                 Solution();
             for (int i = 0; i < K; i++)
                 Console.WriteLine(Result[i]);
-
         }
         
 //Priority queue를 List로 선언하고 원소를 추가, 삭제하면서 새로 집어넣을 원소 위치는 이진탐색알고리즘으로 찾는다.
