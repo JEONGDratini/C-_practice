@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 //시간초과도 아니고 질문게에 있는 테스트케이스 출력도 다 맞는데 왜 오답이죠..?
-//아웃풋은 맞는데 오답인거 3번째다 3번째 이히힣히 정신나갈 것 같아
+//아웃풋은 맞는데 오답인거 3번째다 3번째 이히힣히 이번엔 시간초과도 메모리 초과도 아니래 걍 아웃풋이 틀렸대
+//근데 어딜 뒤져봐도 반례가 안보이네? 이히ㅣ히힣히히히힣히
+//정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 
+//정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 
+//정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 정신 나갈 것 같아 
 
-//답안 반례 찾으러 떠납니다
 namespace BaekJoon_7662_HeapTree_ver
 {
     public class BinaryHeap//이미 만들어놓은 이진힙 클래스 가지고와서 코드 우려먹기
@@ -74,6 +77,10 @@ namespace BaekJoon_7662_HeapTree_ver
             return root;
         }
 
+        public int Heap_Size() {
+            return A.Count;
+        }
+
         private void Swap(int i, int j)
         {
             int t = A[i];
@@ -96,8 +103,9 @@ namespace BaekJoon_7662_HeapTree_ver
         static void Solution() {
             int N = int.Parse(Console.ReadLine());
             int size = 0;//최대힙, 최소힙 1개씩 사용할 것이므로 size를 사용한다.
-            BinaryHeap MaxHeap = new BinaryHeap();
-            BinaryHeap MinHeap = new BinaryHeap();
+            BinaryHeap MaxHeap = new BinaryHeap();//최대힙
+            BinaryHeap MinHeap = new BinaryHeap();//최소힙
+
             for (int i = 0; i < N; i++) { 
                 string[] raw_data = Console.ReadLine().Split(' ');
                 int num = int.Parse(raw_data[1]);
@@ -119,6 +127,8 @@ namespace BaekJoon_7662_HeapTree_ver
                     {
                         if (num == 1)//큐에서 힙으로 바뀐 것 빼면 듀얼큐버전과 다른건 없다.
                         {
+                            if (MaxHeap.Heap_Size() == 0)
+                                continue;
                             MaxHeap.RemoveOne();
                             size--;
                         }
