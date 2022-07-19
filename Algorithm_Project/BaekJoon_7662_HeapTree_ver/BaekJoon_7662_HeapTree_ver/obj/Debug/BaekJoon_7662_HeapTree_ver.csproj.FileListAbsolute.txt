@@ -1,0 +1,6 @@
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\bin\Debug\BaekJoon_7662_HeapTree_ver.exe.config
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\bin\Debug\BaekJoon_7662_HeapTree_ver.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\bin\Debug\BaekJoon_7662_HeapTree_ver.pdb
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\obj\Debug\BaekJoon_7662_HeapTree_ver.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\obj\Debug\BaekJoon_7662_HeapTree_ver.exe
+C:\Users\user\Desktop\정민용\C#\C-_practice\Algorithm_Project\BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver\obj\Debug\BaekJoon_7662_HeapTree_ver.pdb

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Priority_Queue_Example
 {
+    //우선순위 큐 구현(연결리스트 사용.)
     class Program
     {
         public class Node

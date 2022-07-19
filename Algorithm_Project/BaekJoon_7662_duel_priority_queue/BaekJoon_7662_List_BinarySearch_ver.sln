@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon_7662_duel_priority_queue", "BaekJoon_7662_duel_priority_queue\BaekJoon_7662_duel_priority_queue.csproj", "{317FE9B2-7D8C-4501-B549-534F7EAD59FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon_7662_List_BinarySearch_ver", "BaekJoon_7662_duel_priority_queue\BaekJoon_7662_List_BinarySearch_ver.csproj", "{317FE9B2-7D8C-4501-B549-534F7EAD59FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
