@@ -8,11 +8,14 @@ using System.Threading.Tasks;
 
 //이미 만들어놨던 우선순위 큐를 조금 손보면 될듯함. 뭐 안되면 로직 새로짜야징..ㅠ
 //그래서 새로짜는 중;;ㅎㅎ!!
-//아웃풋은 맞는데 이진탐색을 써도 시간이 너무 오래걸린대요..ㅠ 자료구조가 비효율적인 것 같은데 뭘 써야할지 모르겠넹..ㅠ
+//아웃풋은 맞는데 이진탐색을 써도 시간이 너무 오래걸린대요..ㅠ
+//자료구조가 비효율적인 것 같아 다른 방식을 사용해보겠습니다.
+//근데 탐색시간이 O(logN)인데 이게 시간초과가 뜨네..ㄷ
+//왜냐하면 List의 RemoveAt 함수가 O(N)이기 때문이지
 
 
 
-namespace BaekJoon_7662_duel_priority_queue
+namespace BaekJoon_7662_List_BinarySearch_ver
 {
     class Program
     {

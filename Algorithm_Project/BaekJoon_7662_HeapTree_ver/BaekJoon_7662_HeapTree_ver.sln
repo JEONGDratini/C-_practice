@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaekJoon_7662_HeapTree_ver", "BaekJoon_7662_HeapTree_ver\BaekJoon_7662_HeapTree_ver.csproj", "{2F6F6853-C453-40CD-BDF8-35270563775B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F6F6853-C453-40CD-BDF8-35270563775B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F6F6853-C453-40CD-BDF8-35270563775B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F6F6853-C453-40CD-BDF8-35270563775B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F6F6853-C453-40CD-BDF8-35270563775B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
