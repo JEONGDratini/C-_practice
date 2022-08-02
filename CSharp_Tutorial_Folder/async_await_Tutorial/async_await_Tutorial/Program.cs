@@ -10,13 +10,14 @@ namespace async_await_Tutorial
     {
          static void Main(string[] args)//이 컴퓨터의 c#버전에서는 Main을 비동기로 만들 수 없대요 ㅠㅠ
         {
-             /*
+             
             TaskTest1();
             System.Console.WriteLine("MainThread_Running..");
             Console.ReadLine();
-             */
+             
 
             Task t = TaskTest2();
+            
             for (int i = 0; i < 10; i++) {
                 System.Console.WriteLine("Do Something before end of your vacation");
             }
